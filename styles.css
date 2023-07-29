@@ -1,0 +1,254 @@
+header{
+    position: fixed;
+    top:0%;
+    left: 0;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
+}
+body {
+    top:auto;
+    background-image: url("./pictures/cherryChange.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+#s-text { /* welcome */
+  font: 3em/1 Arial;
+}
+.text--line {
+  font-size: 2.5em;
+}
+svg {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  height: 60%;
+  margin-top: 60px;
+}
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 3px;
+  -webkit-animation: stroke-offset 9s infinite linear;
+    animation: stroke-offset 9s infinite linear;
+}
+.text-copy:nth-child(1) {
+  stroke: #360745;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: #4e0ecd;
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+  stroke: #2004f0;
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: #efeac5;
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: #ee099a;
+  stroke-dashoffset: 35%;
+}
+@-webkit-keyframes stroke-offset {
+30% {
+  stroke-dashoffset: 35%;
+  stroke-dasharray: 0 87.5%;
+}
+}
+@keyframes stroke-offset {
+30% {
+  stroke-dashoffset: 35%;
+  stroke-dasharray: 0 87.5%;
+}
+}
+#about{
+    position: relative;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 25px;
+    font-style: italic;
+}
+#welcome:before, #about:before, #can:before, #use:before, #more:before {
+display: block;
+content: "";
+height: 60px;
+margin: -60px 0 0;
+}
+#about h2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: rgb(183, 36, 139);
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #0f0f0f;
+    width: 100%;
+    color:#ed0bb1a9;
+    font-size: 35px;
+    font-style: italic;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+#about p {
+    text-indent: 65px;
+    position: relative;
+    text-align: justify;;
+    text-shadow: plum;
+    background-color: white;
+    width: 95%;
+    font-size: 22px;
+    padding-left: 2%;
+}
+#can h2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: rgb(183, 36, 139);
+    font-size: 35px;
+    text-shadow: 1px 1px 1px #0f0f0f;
+    font-style: italic;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+#can ul li{
+    background-color: white;
+    font-size: 22px;
+    width: 95%;
+    padding-left: 2%;
+
+
+
+}
+#use{/*use*/
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: rgb(183, 36, 139);
+    font-size: 20px;
+}
+#use h3{
+position: relative;
+    text-align: center;
+    width: 100%;
+    color: rgb(183, 36, 139);
+    font-size: 20px;
+text-shadow: 1px 1px 1px #0f0f0f;
+width: 100%;
+color:#ed0bb1a9;
+font-size: 35px;
+font-style: italic;
+white-space:nowrap;
+overflow:hidden;
+-webkit-animation: type 5s steps(50, end);
+animation: type 5s steps(50, end);
+}
+@keyframes type{
+from { width: 0; }
+}
+@-webkit-keyframes type{
+from { width: 0; }
+}
+#use table{
+width: 80%;
+height: 100%;
+padding-left: 15%;
+text-align: left;
+font-size: 18px;
+color: black;
+font-style: italic;
+border-collapse: separate;
+
+}
+#use table td {
+text-align: left;
+padding: 10px 15px;
+font-size: 16px;
+vertical-align: top;
+}
+#use table tr:nth-child(even) {
+background: #e97bb2;
+}
+#use table tr:nth-child(odd) {
+background: #bc09bca9;
+}
+#use table tr:first-child td{
+border-top: 1 px solid #3ed8f3;
+}
+#use table tr:last-child td{
+border-bottom: 1px solid #3ed8f3;
+}
+#use table tr:first-child td:first-child {
+border-radius: 20px 0 0 0;
+}
+#use table tr:first-child td:last-child {
+border-radius: 0 20px 0 0;
+}
+#use table tr:last-child td:first-child {
+border-radius: 0 0 0 20px;
+}
+#use table tr:last-child td:last-child {
+border-radius: 0 0 20px 0;
+}
+#more h2{
+position: relative;
+text-align: center;
+width: 100%;
+color: rgb(183, 36, 139);
+text-shadow: 1px 1px 1px #0f0f0f;
+width: 100%;
+color:#ed0bb1a9;
+font-size: 35px;
+font-style: italic;
+white-space:nowrap;
+overflow:hidden;
+-webkit-animation: type 5s steps(50, end);
+animation: type 5s steps(50, end);
+}
+#more p{
+position: relative;
+text-align: center;
+width: 95%;
+font-size: 22px;
+padding-left: 2%;
+background-color: white;
+}
+#msg{
+border: double;
+font-size: 16px;
+height: 36px;
+width: 500px;
+text-align: justify;
+}
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: auto;
+padding-bottom: 1px;
+line-height: 1px;
+width: 100%;
+position: relative;
+bottom: 0;
+}
+footer a {
+margin: 0 5px;
+}
+footer img {
+width: 25px;
+height: 25px;
+}
